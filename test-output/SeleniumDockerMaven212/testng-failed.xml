@@ -6,6 +6,15 @@
   </listeners>
   <test name="SeleniumDocker(failed)">
     <classes>
+      <class name="org.wtt.test.SeleniumDocker">
+        <methods>
+          <include name="setUp"/>
+          <include name="testCheckBox"/>
+          <include name="simpleTest"/>
+          <include name="afterTest"/>
+          <include name="setupBeforeSuite"/>
+        </methods>
+      </class> <!-- org.wtt.test.SeleniumDocker -->
       <class name="org.wtt.test.SampleConnectGrid">
         <methods>
           <include name="f"/>
