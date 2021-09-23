@@ -34,8 +34,8 @@ public class TestStatus {
 	@JsonProperty("testPlanId")
 	private String testPlanId;
 	
-	@JsonProperty("testPlanName")
-	private String testPlanName;
+	//@JsonProperty("testPlanName")
+	//private String testPlanName;
 	
 	
 
@@ -43,9 +43,9 @@ public class TestStatus {
 		this.testPlanId = testPlanId;
 	}
 	
-	public void setTestPlanName(String testPlanName) {
-		this.testPlanName = testPlanName;
-	}
+	//public void setTestPlanName(String testPlanName) {
+	//	this.testPlanName = testPlanName;
+	//}
 
 	public void setDescription(String description) {
 		this.description = description;
