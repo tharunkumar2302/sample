@@ -34,18 +34,10 @@ public class TestStatus {
 	@JsonProperty("testPlanId")
 	private String testPlanId;
 	
-	//@JsonProperty("testPlanName")
-	//private String testPlanName;
-	
-	
 
 	public void setTestPlanId(String testPlanId) {
 		this.testPlanId = testPlanId;
 	}
-	
-	//public void setTestPlanName(String testPlanName) {
-	//	this.testPlanName = testPlanName;
-	//}
 
 	public void setDescription(String description) {
 		this.description = description;
