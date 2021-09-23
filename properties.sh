@@ -1,6 +1,6 @@
 #!/bin/bash
 
-instanceFile=${WORKSPACE}/src/main/resources/application.properties
+instanceFile=${WORKSPACE}/src/test/resources/application.properties
 if [ -f "$instanceFile" ]; then
    environment_url=$(cat "$instanceFile" | grep environment.url)
    application_url=$(cat "$instanceFile" | grep application.url)
