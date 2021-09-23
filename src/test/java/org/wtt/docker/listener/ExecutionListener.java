@@ -74,7 +74,8 @@ public class ExecutionListener implements ITestListener {
 		long el = eTime - sTime;
 		this.testStatus.setDuration(el + "");
 		this.testStatus.setTestPlanId(PropertiesUtility.properties.getProperty("test.planId"));
-		this.testStatus.setTestPlanId(PropertiesUtility.properties.getProperty("test.planName"));
+		this.testStatus.setTestPlanName(PropertiesUtility.properties.getProperty("Test.PlanName"));
+		
 		ResultSender.send(this.testStatus);
 	}
 
