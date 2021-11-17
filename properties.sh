@@ -7,7 +7,7 @@ if [ -f "$instanceFile" ]; then
    es_path=$(cat "$instanceFile" | grep es.path)
    test_planId=$(cat "$instanceFile" | grep test.planId)
    test_planName=$(cat "$instanceFile" | grep test.planName)
-   file_content=$(cat "$instanceFile" | grep file.content)
+   file_Content=$(cat "$instanceFile" | grep file.Content)
 
 
    
@@ -16,7 +16,7 @@ if [ -f "$instanceFile" ]; then
    updated_es_path="es.path=$espath"
    updated_test_planId="test.planId=$testplanId"
    updated_test_planName="test.planName=$testplanName"
-   updated_file_content="test.content=$filecontent"
+   updated_file_Content="test.Content=$fileContent"
     
    # SED command to replace exisitng line with newly updated line in InstanceFile
    sed -i "s|$environment_url|$updated_environment_url|g" "$instanceFile"
@@ -24,5 +24,5 @@ if [ -f "$instanceFile" ]; then
    sed -i "s|$es_path|$updated_es_path|g" "$instanceFile"
    sed -i "s/$test_planId/$updated_test_planId/g" "$instanceFile"
    sed -i "s/$test_planName/$updated_test_planName/g" "$instanceFile"
-   sed -i "s/$file_content|$updated_file_content|g" "$instanceFile"
+   sed -i "s/$file_Content|$updated_file_Content|g" "$instanceFile"
 fi
